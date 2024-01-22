@@ -4,7 +4,7 @@ import Button from './Button'
 
 const Hero = () => {
   return (
-     <section className=' border-2  max-container flex-col  gap-20 py-10  pb-32 md:gap-28 lg:py-20 xl:flex-row  border-2'>
+     <section className=' border-2  max-container flex-col  gap-20 py-10  pb-32 md:gap-28 lg:py-20 xl:flex-row '>
       <div className='absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60'/>
      {/* LEFT */}
 
@@ -37,7 +37,7 @@ const Hero = () => {
             <span className='text-[16px] font-[400] lg:text-[20px] font-[700] ml-2 underline'> Excellent Reviews</span>
            </p>
          </div> 
-           <div className='flex flex-col w-full gap-3 sm:flex-row'>
+           <div className='flex flex-col w-full gap-3 sm:flex-row m-5'>
             <Button 
               type='button' 
               title='Download App' 
@@ -53,6 +53,34 @@ const Hero = () => {
            </div>
          </div>
 
+         <div className='relative flex flex-1 items-start  border-blue-500'> 
+           <div className='relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8'>
+              
+              <div className='flex flex-col'>
+                 <div className='flex items-center justify-between'>
+                     <p className='regular-16 text-gray-20'>  Location </p>
+                     <Image src ="/close.svg"
+                     alt='close'
+                     width={24}
+                     height={24}/>
+                 </div> 
+                  <p className='text-[20px] font-[700] text-white'> Example City </p>
+
+                 <div className='flex items-center justify-between'>
+                    <div className='flex flex-col'>
+                        <p className='text-[16px] font-[400] text-gray-20'> Distance </p>    
+                        <p className='text-[20px] font-[700] text-white'> 173.28 ml </p>    
+                    </div>
+                
+                    <div className='flex flex-col'>
+                        <p className='text-[16px] font-[400] text-gray-20'> Elevation</p>    
+                        <p className='text-[20px] font-[700] text-white'> 2.040 km </p>    
+                    </div>
+                 </div> 
+             </div>
+           
+           </div>
+         </div>
      </section>
     )
 }
